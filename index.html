@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Escolha um Passeio, Viagem">
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <title>Qual Passeio?</title>
+</head>
+<body class="body">
+    
+        <h1 style="background-color: rgb(98, 222, 239);">Bora Sair?</h1>
+        <br>
+        <img class="" src="assents/passeio2.jpg" alt="">
+        <h1 style="background-color: rgb(152, 88, 140);">Lista de Lugares</h1>
+        <div style="background-color: #57438C" >
+        
+        <ol>
+            <strong>
+            <li> Parque Ibirapuera</li>
+            <li>Cinema - Filme: Megatubarão 2</li>
+            <li>Cinema - Filme: Gran Turismo: De Jogador a Corredor</li>
+            <li>Parque do Lopes</li>
+            <li>Cinema - Filme: As Marvels</li>
+            <li>Cinema - Filme: Fnaf</li>
+            <li>Liberdade</li>
+            <li>Parque da Aguá Branca</li>
+            <li>Shooping Tamboré</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li> 
+            <li></li>
+            <li></li> 
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li> 
+            <li></li>
+            <li></li> 
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li> 
+            <li></li>
+            <li></li>
+            </strong>
+        </ol>
+    </div>    
+
+    <div class="lugares">
+        <h1 class="palavra" onclick="trocarpala()"></h1> 
+        <button class="meu-botao" onclick="trocarpala()">Lugar 💟</button>
+    </div>
+    <br><br>
+
+    <h1 style="background-color: #6A818A;">LUGARES PARA IR, MAS TEM QUE MARCAR COM ANTESEDÊNCIA 🗺 </h1>
+    
+    <div style="background-color: #9980dd" >
+        
+        <ol>
+            <strong>
+            <li>Campos do Jordão</li>
+            <li>Praia</li>
+            <li>Rio de Janeiro</li>
+            <li>Paraty (Praia)</li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li> 
+            <li></li>
+            <li></li> 
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li> 
+            <li></li>
+            <li></li> 
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li> 
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            </strong>
+        </ol>
+    </div>    
+
+    <div class="num">
+        <h1 class="trocar" onclick="trocarnum()"></h1> 
+        <button class="meu-botao" onclick="trocarnum()">Lugar 🏖</button>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script.js"></script>
+    <script>
+        var palavra = document.querySelector(".palavra");
+        var lugares = ["Ibirapuera","Filme: Megatubarão 2", "Filme: Gran Turismo", "Lopes", "Filme: Fnaf", "Filme: As Marvels", "Liberdade", "Parque da Aguá Branca", "Shooping Tamboré"];
+        function trocarpala(){
+            palavra.innerHTML = lugares [Math.floor(Math.random()*11)];
+        }
+    </script>
+
+
+
+<script>
+    var trocar = document.querySelector(".trocar");
+    function trocarnum(){
+        trocar.innerHTML = `${Math.floor(Math.random()*4)}`;
+        
+    }
+</script>
+
+</body>
+</html>
